@@ -30,7 +30,7 @@ void display_complex_number(complex c)
 		if (im_value == 1)
 			printf("%.f %c i\n", c.re, operator);
 		else
-			printf("%.f %c %.fi\n", c.re, operator, c.im);
+			printf("%.f %c %.fi\n", c.re, operator, im_value);
 	}
 
 }
