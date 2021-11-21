@@ -19,6 +19,8 @@ typedef struct complex_display
 
 /* displays the complex numbers */
 void display_complex_number(complex c);
+/* returns the conjugate of a given complex number */
+complex conjugate(complex c);
 
 #endif /* MAIN_HEADER */
 
