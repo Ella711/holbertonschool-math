@@ -25,6 +25,8 @@ void display_complex_number(complex c);
 complex conjugate(complex c);
 /* returns the modulus of a given complex number */
 double modulus(complex c);
+/* returns the argument of a given complex number */
+double argument(complex c);
 
 #endif /* MAIN_HEADER */
 
