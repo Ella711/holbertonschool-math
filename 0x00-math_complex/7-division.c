@@ -7,13 +7,23 @@
  * @c3: struct with complex numbers
  */
 
+void multiplication(complex c1, complex c2, complex *c3)
+{
+	c3->re = (c1.re * c2.re) + ((c1.im * c2.im) * (-1));
+	c3->im = (c1.re * c2.im) + (c1.im * c2.re);
+}
+
 void division(complex c1, complex c2, complex *c3)
 {
-	double denominator;
+	complex conjugate, denominator, numerator;
 
-	denominator = c2.re * c2.re + c2.im * c2.im;
+	conjugate.im = (-(c2.im));
+	conjugate.re = c2.re;
 
-	c3->re = ((c1.re * c2.re) + (c1.im * c2.im)) / denominator;
-	c3->im = ((c1.im * c2.re) - (c1.re * c2.im)) / denominator;
+	multiplication(c1, conjugate, &numerator);
+	multiplication(c2, conjugate, &denominator);
+
+	c3->re = numerator.re / denominator.re;
+	c3->im = numerator.im / denominator.re;
 }
 
