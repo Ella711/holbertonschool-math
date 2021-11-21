@@ -29,6 +29,8 @@ double modulus(complex c);
 double argument(complex c);
 /* performas the addition operation to complex numbers */
 void addition(complex c1, complex c2, complex *c3);
+/* subtracts complex numbers */
+void substraction(complex c1, complex c2, complex *c3);
 
 #endif /* MAIN_HEADER */
 
