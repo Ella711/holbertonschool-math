@@ -27,6 +27,8 @@ complex conjugate(complex c);
 double modulus(complex c);
 /* returns the argument of a given complex number */
 double argument(complex c);
+/* performas the addition operation to complex numbers */
+void addition(complex c1, complex c2, complex *c3);
 
 #endif /* MAIN_HEADER */
 
