@@ -10,7 +10,7 @@ double modulus(complex c)
 {
 	double mod;
 
-	mod = sqrt(pow(c.im, c.im) + pow(c.re, c.re));
+	mod = hypot(c.re, c.im);
 	return (mod);
 }
 
