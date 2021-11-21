@@ -33,6 +33,8 @@ void addition(complex c1, complex c2, complex *c3);
 void substraction(complex c1, complex c2, complex *c3);
 /* multiplies complex numbers */
 void multiplication(complex c1, complex c2, complex *c3);
+/* divides complex numbers */
+void division(complex c1, complex c2, complex *c3);
 
 #endif /* MAIN_HEADER */
 
